@@ -1,4 +1,4 @@
-import { Time } from "./core";
+import { TimeUtils } from "./utils";
 import { World } from "./ecs";
 
 export class NovaEngine {
@@ -15,8 +15,8 @@ export class NovaEngine {
     static stepNumber: number = 0
 
     private static update() {
-        Time.calculateDeltaTime()
-        let dt = Time.deltaTime
+        TimeUtils.calculateDeltaTime()
+        let dt = TimeUtils.deltaTime
 
         NovaEngine.accumulatedTime += dt
 
