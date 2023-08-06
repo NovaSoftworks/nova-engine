@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "author": "Nova Softworks",
   "license": "Apache-2.0",
+  "exports": {
+    "./core": "./src/core",
+    "./ecs": "./src/ecs",
+    "./math": "./src/math"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NovaSoftworks/nova-engine_core.git"
